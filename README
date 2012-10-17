@@ -1,0 +1,26 @@
+Muon
+
+Muon is a versatile and feature-rich online shop module for WebsiteBaker and Lepton CMS.
+
+Note that this is a fork of the original Bakery shop module, which is still under
+development and can be found here: http://bakery-shop.ch/
+
+If you seek a proven and stable version plus support through the WebsiteBaker forum I
+strongly recommend using the original. If, however, you seek for a more advanced version
+and you know your onions regarding CSS, JS and a little PHP, you may try this fork, which
+- amongst others - provides the following features:
+
+- complete re-work of frontend output to modern HTML and CSS
+- free optional textarea for every item
+- Realtime Price Calculation (rpc.js) when choosing different options in item view
+- Precautions taken to meet German button law specifications
+- Several template placeholders dedicated to webanalytics addicts to make their statistics shine
+- lots of more stuff
+
+For a comprehensive list please refer to the CHANGELOG.
+
+Why I did this? Well, because I had fun doing so, getting rid of things that annoyed me
+and by the same time improving my PHP skills and learning to handle a somewhat bigger
+project.
+
+Thanks for using and have fun :-)

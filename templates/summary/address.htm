@@ -1,0 +1,28 @@
+<h2 class="mod_bakery_h_f">
+	<img src="{WB_URL}/modules/bakery/images/{STEP_IMG_DIR}/step_2.gif" />
+	{TXT_ORDER_SUMMARY}
+</h2>
+<form id="summary" action="{SETTING_CONTINUE_URL}" method="post">
+<!--<table id="oder_summary_addresses">
+	<tr>
+		<th>{TXT_ADDRESS}</th>
+		<th>{TXT_SHIP_ADDRESS}</th>
+	</tr>
+	<tr>
+		<td>{CUST_ADDRESS}</td>
+		<td>{SHIP_ADDRESS}</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left"><input type="submit" name="modify_address" class="mod_bakery_bt_modify_address_f" value="{TXT_MODIFY_ADDRESS}" /></td>
+	</tr>
+</table>-->
+<div id="order_summary_cust_address">
+<h3>{TXT_ADDRESS}</h3>
+{CUST_ADDRESS}
+</div><!--
+
+--><div id="order_summary_ship_address">
+<h3>{TXT_SHIP_ADDRESS}</h3>
+{SHIP_ADDRESS}
+</div>
+<button type="submit" name="modify_address" value="{TXT_MODIFY_ADDRESS}">{TXT_MODIFY_ADDRESS}</button>

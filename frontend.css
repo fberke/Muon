@@ -1,0 +1,469 @@
+/*
+  CSS definition for WebsiteBaker module: Bakery
+  Copyright (C) 2011, fberke
+
+  This CSS file is free software. You can redistribute it and/or modify it 
+  under the terms of the GNU General Public License - version 2 or later, 
+  as published by the Free Software Foundation: http://www.gnu.org/licenses/gpl.html.
+
+  This CSS file is distributed in the hope that it will be useful, 
+  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+  GNU General Public License for more details.
+*/
+
+
+/* Frontend Stylesheet Module Bakery */
+/* ********************************* */
+
+/*
+NOTE:
+Modify the HTML of the main page and the item page in the layout section of the Bakery page settings.
+Modify the HTML of the invoice template in the layout section of the Bakery payment methods > select invoice.
+Modify the CSS of the main page and the item page in this stylesheet.
+Modify the CSS of the invoice template and the view order in the backend stylesheet.
+*/
+
+
+/*
+LIGHTBOX2
+Just use original stylesheet, must be imported at the beginning
+ */
+
+@import url("lightbox2/css/lightbox.css");
+
+/*
+Import old CSS settings from original Bakery frontend.css
+Will be removed once HTML and CSS redesign is finished
+*/
+
+@import url("frontend_old.css");
+
+
+/******************************************/
+/* CSS settings for bakery shop items     */
+/******************************************/
+   
+/**************************************/
+/* Settings for Bakery                */
+/**************************************/
+
+
+/* GENERAL */
+table {
+	width: 100%;
+}
+td {
+	word-wrap: break-word;
+}
+td, th {
+	vertical-align: top;
+}
+
+.order_number {
+	font-weight: bold;
+}
+
+/* use button tag for buttons, that's why it's there, isn't it?  */
+div#mod_bakery_wrapper_f button,
+div#mod_bakery_wrapper_f input[type="submit"] {
+	border: 1px solid #999;
+	background-color: #333;
+	padding: 3px 4px;
+	color: white !important;
+	font-weight: bold;
+	margin: .5em 0;
+}
+
+/********************************************/
+/* ITEM OVERVIEW			    */
+/********************************************/
+
+div#item_overview_show_cart {
+	text-align: right;
+}
+
+img.mod_bakery_main_thumb_f {
+	float: left;
+}
+div.item_overview_wrapper {
+	clear: both;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+}
+
+div.item_overview_thumbs {
+}
+
+div.item_overview_details {
+	margin-left: 120px; /* standard thumb img width: 100px */
+}
+div.item_overview_details>h3 { /* justify with thumb upper border */
+	padding: 0;
+	margin: 0 0 .3em 0 !important;
+}
+div.item_overview_details>p { /* reset paragraphs */
+	/*margin: 0;
+	padding: 0;*/
+}
+div.item_overview_details>p.item_short_desc {
+}
+div.item_overview_details>p.item_price {
+}
+div.item_overview_details>p.item_shipping_info{
+}
+div.item_overview_details>p.item_stock_info {
+}
+ul#item_overview_footernav {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ul#item_overview_footernav>li {
+	display: inline-block;
+	width: 20%;
+	font-size: .8em;
+	color: #999;
+}
+ul#item_overview_footernav>li:first-child {
+	text-align: left;
+}
+ul#item_overview_footernav>li:nth-child(2) {
+	text-align: center;
+}
+ul#item_overview_footernav>li:last-child {
+	text-align: right;
+}
+
+/********************************************/
+/* ITEM DETAILS VIEW			    */
+/********************************************/
+
+#item_details_wrapper { /* surrounding container */
+	overflow: hidden;
+}
+
+#item_details_images { /* images container */
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+	margin: 0 1% 0 0;
+}
+img.mod_bakery_item_img_f {
+	width: 100%; /* max width of parent element */
+}
+img.mod_bakery_item_thumb_f {
+	width: 44%;
+	float:left;
+	border: 2px solid #ddd;
+	margin: 2px;
+}
+
+#item_details_description { /* description and attributes container */
+	overflow: hidden;
+	display: inline-block;
+	width:48%;
+	vertical-align: top;
+	margin: 0 1%;
+}
+#item_details_description>h1 {
+	font-size: 1.5em;
+	margin: 0 0 .5em 0 !important;
+}
+#item_details_description label {
+	display: inline-block;
+	line-height: 1.3;
+	text-align: right;
+	padding-right: 1em;
+	width: 140px; /* Width of labels */
+}
+#item_details_description select {
+	width: 120px;
+}
+#item_details_description fieldset ol {
+	padding: 0;
+	margin: .5em 0;;
+}
+#item_details_description fieldset li {
+	list-style: none;
+	margin: 0;
+}
+#item_details_description label[for="view_item_textarea"] {
+	display: block;
+	width: 100%;
+	text-align: left;
+	margin-top: .5em;
+	padding: 0;
+}
+#item_details_description textarea#view_item_textarea {
+	width: 95%;
+	border: 1px solid #999;
+	background-color: #efefef;
+	padding: 3px 4px;
+}
+#item_details_description>p.sku {
+	color: #999;
+}
+#item_details_description>p.item_stock_info {
+	color: #999;
+}
+
+#item_details_price_wrapper { /* price and shipping cost container wrapper */
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+	margin: 0 0 0 1%;
+}
+
+#item_details_price_shipping { /* price and shipping cost container */
+	background-color: #ddd;
+	padding: 2px 3px;
+	margin-bottom: .5em; /* some space btw. this item and input/button */
+}
+#item_details_price_shipping>p { /* reset paragraphs */
+	margin: 0;
+	padding: 0;
+}
+#item_details_price_shipping>p.item_price {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: .3em;
+}
+#item_details_price_shipping>p.item_price>span:first-child {
+	display: none;
+}
+#item_details_price_shipping>p.item_vat_info,
+#item_details_price_shipping>p.item_shipping,
+#item_details_price_shipping>p.shipping_cost {
+	font-size: .8em;
+	color: #666;
+	margin-bottom: .1em;
+}
+
+#item_details_submit { /* number input and submit button container */
+	padding: 10px 3px 3px;
+	background-color: #ccc;
+}
+
+p.item_previous_next {
+	font-size: .8em;
+	color: #ccc;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+
+
+/********************************************/
+/* SHOPPING CART 			    */
+/********************************************/
+
+table#shopping_cart {
+	margin: 1em 0;
+	border-collapse: collapse;
+}
+
+table#shopping_cart th,
+table#shopping_cart td {
+	padding: 4px 3px; /* remember last row */
+	border: 0;
+}
+
+table#shopping_cart thead,
+table#shopping_cart tfoot {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #ccc;
+}
+
+table#shopping_cart thead th:nth-child(n+5),
+table#shopping_cart tbody td {
+	text-align: right;
+}
+table#shopping_cart tbody td:nth-child(1),
+table#shopping_cart tbody td:nth-child(2) {
+	text-align: center;
+	
+}
+table#shopping_cart tbody td:nth-child(3) {
+	text-align: left;
+}
+
+table#shopping_cart tbody tr {
+	border-bottom: 1px solid #ccc;
+}
+table#shopping_cart tbody tr:last-child {
+	border-bottom: 0;
+}
+table#shopping_cart tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+table#shopping_cart tbody tr:hover {
+	background-color: #def;
+}
+
+table#shopping_cart tfoot tr {
+	text-align: right;
+}
+table#shopping_cart tfoot tr:last-child {
+	font-weight: bold;
+}
+
+/* submit buttons */
+form#cart button[name="continue_shopping"] {
+	float:left;
+}
+form#cart button[name="update_cart"] {
+	float:left;
+	margin-left:1em;
+}
+form#cart button[name="submit_order"] {
+	float:right;
+	margin-left:1em;
+}
+
+/********************************************/
+/* ADDRESS FORM 			    */
+/********************************************/
+
+form#mod_bakery_address_form fieldset {
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+form#mod_bakery_address_form legend {
+  padding: 0 2px;
+  font-weight: bold;
+}
+form#mod_bakery_address_form label {
+  display: inline-block;
+  line-height: 1.8;
+  text-align: right;
+  padding-right: 1em;
+  width: 140px; /* Width of labels */
+}
+form#mod_bakery_address_form input {
+	width: 300px;
+}
+form#mod_bakery_address_form fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form#mod_bakery_address_form fieldset li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+form#mod_bakery_address_form em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+/* submit buttons */
+form#mod_bakery_address_form button[name="summary"] {
+	float: right;
+	margin-left:1em;
+}
+
+/********************************************/
+/* ORDER SUMMARY 			    */
+/********************************************/
+
+/* Addresses */
+div#order_summary_cust_address,
+div#order_summary_ship_address {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	margin-bottom: 1em;
+}
+
+/* Items */
+table#order_summary {
+	margin: 1em 0;
+	border-collapse: collapse;
+}
+
+table#order_summary th,
+table#order_summary td {
+	padding: 4px 3px; /* remember last row */
+	border: 0;
+}
+
+table#order_summary thead,
+table#order_summary tfoot {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #ccc;
+}
+
+table#order_summary thead th:nth-child(n+4),
+table#order_summary tbody td/*:nth-child(n+5)*/ {
+	text-align: right;
+}
+table#order_summary tbody td:nth-child(1) {
+	text-align: center;
+}
+table#order_summary tbody td:nth-child(2) {
+	text-align: left;
+}
+
+table#order_summary tbody tr {
+	border-bottom: 1px solid #ccc;
+}
+table#order_summary tbody tr:last-child {
+	border-bottom: 0;
+}
+table#order_summary tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+table#order_summary tbody tr:hover {
+	background-color: #def;
+}
+
+table#order_summary tfoot tr {
+	text-align: right;
+}
+table#order_summary tfoot tr:last-child {
+	font-weight: bold;
+}
+
+
+/* submit buttons */
+form#summary button[name="continue_shopping"] {
+	float:left;
+}
+form#summary button[name="quit_order"] {
+	float:left;
+	margin-left:1em;
+}
+form#summary button[name="checkout"] {
+	float:right;
+	margin-left:1em;
+}
+
+/********************************************/
+/* PAYMENT METHODS                          */
+/********************************************/
+
+ol.payment_steps {
+	margin: 1em 0;
+	padding: 0;
+	overflow: hidden;
+	color:#999;
+	font-family: Georgia,Times,serif;
+	font-size: 1.6em;
+	font-style: italic;
+}
+ol.payment_steps>li {
+	float: left;
+	width: 28%;
+	margin-left: 5%;
+}
+ol.payment_steps>li>p {
+	font-size: .625em; /* 1/1.6 back to normal */
+	font-style: normal;
+	font-family: sans;
+	line-height: normal;
+	color: black;
+}

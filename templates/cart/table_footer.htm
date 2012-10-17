@@ -1,0 +1,25 @@
+	</tbody>
+	<tfoot>
+	<tr id="cart_row_subtotal">
+		<td colspan="{COLSPAN_M}">{TXT_SUBTOTAL}</td>
+		<td><span>{ORDER_SUBTOTAL}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+
+	<tr id="cart_row_shipping_cost">
+		<td colspan="{COLSPAN_M}">{TXT_SHIPPING_COST}</td>
+		<td><span>{SHIPPING}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+	<tr id="cart_row_sum_total">
+		<td colspan="{COLSPAN_M}">{TXT_TOTAL}</td>
+		<td><span>{ORDER_TOTAL}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+	</tfoot>
+
+</table>
+
+<button type="submit" name="continue_shopping">{TXT_CONTINUE_SHOPPING}</button>
+<button type="submit" name="update_cart" id="update_cart" value="{TXT_UPDATE_CART}">{TXT_UPDATE_CART}</button>
+<button type="submit" name="submit_order" value="{TXT_SUBMIT_ORDER}">{TXT_SUBMIT_ORDER}</button>
+
+<input type="hidden" name="order_id" value="{ORDER_ID}" />
+</form>

@@ -1,0 +1,203 @@
+/******************************************/
+/* CSS settings for bakery shop items     */
+/******************************************/
+   
+/**************************************/
+/* Settings for Bakery                */
+/**************************************/
+
+
+/* GENERAL */
+td {
+	word-wrap: break-word;
+}
+td, th {
+	vertical-align: top;
+}
+.order_number {
+	font-weight: bold;
+}
+
+/* Artikel-Übersicht */
+img.mod_bakery_main_thumb_f {
+	float: left;
+}
+div.article_overview_wrapper {
+	clear:both;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+/*	font-size: 0.9em;*/
+}
+div.article_overview_wrapper p {
+/*	margin: 0.3em 0 .5em;*/
+	line-height: 1.2em;
+}
+div.article_desc_short {
+	margin-left: 120px; /* bei Thumb-Breite von 100px */
+}
+
+input[type="submit"] {
+	border: 1px solid #999;
+	background-color: #99a1d1;
+	padding: 3px 4px;
+}
+
+input.mod_bakery_item_input_f {
+background-color: #fff;
+}
+
+
+/* Artikel Detailansicht */
+
+div.mod_bakery_wrapper_f {
+/*margin-top: 1.2em;*/
+}
+
+img.mod_bakery_item_img_f {
+	float: left;
+	width: 300px;
+	/* IMPORTANT as bakery displays image in original size! */
+}
+img.mod_bakery_item_thumb_f {
+	float: left;
+}
+
+h2.mod_bakery_item_title_f {
+	clear: both;
+	margin-top: 2em;
+}
+
+label {
+display: block;
+margin: .3em 0 .5em 0;
+}
+textarea {
+width: 98%;
+border: 1px solid #999;
+	background-color: #efefef;
+	padding: 3px 4px;
+}
+
+/* ITEM OPTIONS */
+table.bakery_item_options_long {
+margin-bottom: 1.2em;
+}
+
+span.mod_bakery_item_option_f {
+font-weight: normal;
+}
+select.mod_bakery_item_select_f {
+width: 100%;
+}
+
+/* SHOPPING CART */
+table#shopping_cart {
+margin: 1em 0;
+}
+
+table#shopping_cart th,
+table#shopping_cart td,
+table#shopping_cart tr#cart_row_subtotal td,
+table#shopping_cart tr#cart_row_vat td,
+table#shopping_cart tr#cart_row_shipping_cost td {
+padding: 6px 5px; /* remember last row */
+}
+
+table#shopping_cart th {
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+}
+
+table#shopping_cart tr th:first-child,
+table#shopping_cart tr td:first-child {
+margin: 0;
+padding: 0;
+}
+
+table#shopping_cart tr th:nth-child(n+5),
+table#shopping_cart tr td:nth-child(n+5) {
+text-align: right;
+}
+
+table#shopping_cart tr:last-child td {
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+text-align: right;
+margin-top: .2em;
+padding: 6px 5px; /* restore padding overwritten by style for 1st column */
+font-weight: bold;
+}
+
+table#shopping_cart td mod_bakery_cart_td_name_f {
+width: 220px;
+max-width: 230px; /* force wrapping of overlong words */
+}
+
+/* submit buttons */
+form#cart input[name="continue_shopping"] {
+	float:left;
+}
+form#cart input[name="update_cart"] {
+	float:left;
+	margin-left:1em;
+}
+form#cart input[name="submit_order"] {
+	float:right;
+	margin-left:1em;
+}
+
+
+/* ORDER SUMMARY */
+table#order_summary {
+margin: 1em 0;
+}
+
+table#order_summary th,
+table#order_summary td {
+padding: 6px 5px; /* remember last row */
+}
+
+table#order_summary th {
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+}
+
+table#order_summary tr th:nth-child(n+4),
+table#order_summary tr td:nth-child(n+4) {
+text-align: right;
+}
+table#shopping_cart tr#cart_row_subtotal,
+table#shopping_cart tr#cart_row_vat,
+table#shopping_cart tr#cart_row_shipping_cost,
+table#order_summary tr#summary_row_subtotal,
+table#order_summary tr#summary_row_vat,
+table#order_summary tr#summary_row_shipping_cost {
+text-align: right;
+}
+
+table#shopping_cart tr#cart_row_subtotal,
+table#order_summary tr#summary_row_subtotal {
+border-top: 1px solid #000;
+}
+
+table#shopping_cart tr#cart_row_sum_total td,
+table#order_summary tr#summary_row_sum_total td {
+border-top: 1px solid #000;
+border-bottom: 1px solid #000;
+text-align: right;
+margin-top: .2em;
+padding: 6px 5px; /* restore padding overwritten by style for 1st column */
+font-weight: bold;
+}
+
+div#summary_submit_order input[type="submit"] {
+float: right;
+}
+
+div#summary_submit_other {
+margin-top: 1.5em;
+}
+
+div#summary_submit_other input {
+margin-right: 1em;
+}

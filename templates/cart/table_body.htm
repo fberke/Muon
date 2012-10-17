@@ -1,0 +1,26 @@
+<tr>
+	<td>
+		<a href="{LINK}"><img src="{THUMB_URL}" alt="{NAME}" width="{THUMB_WIDTH}" height="{THUMB_HEIGHT}" /></a>
+	</td>
+	<td>
+		{SKU}
+	</td>
+	<td>
+		<span>{NAME}</span>
+		{ATTRIBUTE}
+		{TEXTAREA}
+	</td>
+	<td>
+		<input type="text" name="quantity[{ITEM_ID}][{ATTRIBUTES}]" value="{QUANTITY}" id="id_{ITEM_ID}_{ATTRIBUTES}" size="2" />
+		<a href="#" onclick="javascript: mod_bakery_delete_item_f('{ITEM_ID}_{ATTRIBUTES}');"><img src="{WB_URL}/modules/bakery/images/delete.gif" alt="{TEXT_DELETE}" title="{TEXT_DELETE}" /></a>
+	</td>
+	<td>
+		<span>{PRICE}</span>&nbsp;{SETTING_SHOP_CURRENCY}
+	</td>
+	<td style="display: {DISPLAY_SHIPPING}">
+		<span>{SHIPPING}</span>&nbsp;{SETTING_SHOP_CURRENCY}
+	</td>
+	<td>
+		<span>{TOTAL}</span>&nbsp;{SETTING_SHOP_CURRENCY}
+	</td>
+</tr>

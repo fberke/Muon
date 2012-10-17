@@ -1,0 +1,87 @@
+<!-- BEGIN main_block -->
+
+<!-- BEGIN cust_country_block -->
+<li>
+	<label for="cust_country">{TXT_CUST_COUNTRY}</label>
+	<select name="cust_country" id="cust_country" onchange="javascript: mod_bakery_toggle_state_f('{SELECT_SHOP_COUNTRY}', 'cust', 1);">{COUNTRY_OPTIONS}
+	</select>
+</li>
+<!-- END cust_country_block -->
+
+<!-- BEGIN cust_state_block -->
+<li id="cust_state_select" style="display: none;">
+	<label for="cust_state">{TXT_CUST_STATE}</label>
+	<select name="cust_state" id="cust_state" onchange="javascript: mod_bakery_synchro_cust_state_f()">{STATE_OPTIONS}
+	</select>
+</li>
+<!-- END cust_state_block -->
+
+<!-- BEGIN cust_textfields_block -->
+<li id="{TR_ID}">
+	<label for="{NAME}">{LABEL}</label>
+	<input type="text" class="{CSS_ERROR_CLASS}" name="{NAME}" id="{NAME}" value="{VALUE}" maxlength="{MAXLENGHT}" />
+</li>
+<!-- END cust_textfields_block -->
+
+<!-- BEGIN cust_button_block -->
+</ol>
+</fieldset>
+<button type="submit" name="view_cart" value="{TXT_BACK_TO_CART}">{TXT_BACK_TO_CART}</button>
+<button type="submit" name="summary" value="{TXT_SUBMIT_ORDER}">{TXT_SUBMIT_ORDER}</button>
+<!-- END cust_button_block -->
+
+<!-- BEGIN cust_buttons_block -->
+</ol>
+</fieldset>
+<button type="submit" name="view_cart" value="{TXT_BACK_TO_CART}">{TXT_BACK_TO_CART}</button>
+<button type="submit" name="add_ship_form" value="{TXT_ADD_SHIP_FORM}">{TXT_ADD_SHIP_FORM}</button>
+<button type="submit" name="summary" value="{TXT_SUBMIT_ORDER}">{TXT_SUBMIT_ORDER}</button>
+<!-- END cust_buttons_block -->
+
+<!-- BEGIN ship_title_block -->
+</fieldset>
+<fieldset id="shipping_address">
+<legend>{TXT_FILL_IN_SHIP_ADDRESS}:</legend>
+<ol>
+<!-- END ship_title_block -->
+
+<!-- BEGIN ship_country_block -->
+<li>
+	<label for="ship_country">{TXT_CUST_COUNTRY}</label>
+	<select name="ship_country" id="ship_country" onchange="javascript: mod_bakery_toggle_state_f('{SELECT_SHOP_COUNTRY}', 'ship', 1);">{COUNTRY_OPTIONS}
+	</select>
+</li>
+<!-- END ship_country_block -->
+
+<!-- BEGIN ship_state_block -->
+<li id="ship_state_select" style="display: none;">
+	<label for="ship_state">{TXT_CUST_STATE}</label>
+	<select name="ship_state" id="ship_state" onchange="javascript: mod_bakery_synchro_ship_state_f()">{STATE_OPTIONS}
+	</select>
+</li>
+<!-- END ship_state_block -->
+
+<!-- BEGIN ship_textfields_block -->
+<li id="{TR_ID}">
+	<label for="{NAME}">{LABEL}</label>
+	<input type="text" class="{CSS_ERROR_CLASS}" name="{NAME}" id="{NAME}" value="{VALUE}" maxlength="{MAXLENGHT}" />
+</li>
+<!-- END ship_textfields_block -->
+
+<!-- BEGIN ship_buttons_block -->
+</ol>
+</fieldset>
+<button type="submit" name="view_cart" value="{TXT_BACK_TO_CART}">{TXT_BACK_TO_CART}</button>
+<button type="submit" name="hide_ship_form" value="{TXT_HIDE_SHIP_FORM}">{TXT_HIDE_SHIP_FORM}</button>
+<button type="submit" name="summary" value="{TXT_SUBMIT_ORDER}">{TXT_SUBMIT_ORDER}</button>
+<!-- END ship_buttons_block -->
+
+<!-- BEGIN ship_button_block -->
+</ol>
+</fieldset>
+<button type="submit" name="view_cart" value="{TXT_BACK_TO_CART}">{TXT_BACK_TO_CART}</button>
+<button type="submit" name="summary" value="{TXT_SUBMIT_ORDER}">{TXT_SUBMIT_ORDER}</button>
+<!-- END ship_button_block -->
+
+</form>
+<!-- END main_block -->

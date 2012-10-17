@@ -1,0 +1,33 @@
+</tbody>
+<tfoot>
+	<tr id="summary_row_subtotal">
+		<td colspan="{COLSPAN_M}">{TXT_SUBTOTAL}</td>
+		<td><span>{ORDER_SUBTOTAL}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+	<tr id="summary_row_vat" style="display: {DISPLAY_TAX}">
+		<td colspan="{COLSPAN_M}">{TXT_INCL} {TAX_RATE} {TXT_TAX}</td>
+		<td><span>{SALES_TAX}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+	<tr id="summary_row_shipping_cost">
+		<td colspan="{COLSPAN_M}">{TXT_SHIPPING_COST}</td>
+		<td><span>{SHIPPING}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+	<tr id="summary_row_sum_total">
+		<td colspan="{COLSPAN_M}">{TXT_TOTAL}</td>
+		<td><span>{ORDER_TOTAL}</span>&nbsp;{SETTING_SHOP_CURRENCY}</td>
+	</tr>
+</tfoot>
+</table>
+
+<fieldset id="legal_terms">
+	{TXT_RIGHT_OF_CANCELLATION}
+	<input type="{TAC_INPUT_TYPE}" name="agree_tac" id="agree_tac" value="yes" />{TAC_LINK}
+	<input type="{CANCELLATION_INPUT_TYPE}" name="agree_cancellation" id="agree_cancellation" value="yes" />{CANCELLATION_LINK}
+	<input type="{PRIVACY_INPUT_TYPE}" name="agree_privacy" id="agree_privacy" value="yes" />{PRIVACY_LINK}
+</fieldset>
+
+	<button type="submit" name="continue_shopping" value="{TXT_CONTINUE_SHOPPING}">{TXT_CONTINUE_SHOPPING}</button>
+	<button type="submit" name="quit_order" value="{TXT_QUIT_ORDER}" onclick="javascript: return confirm('{TXT_JS_CONFIRM}')">{TXT_QUIT_ORDER}</button>
+	<button type="submit" name="checkout" value="{TXT_SUBMIT_BUY}"  onclick="return checkLegal ('{JS_CHECK_TAC}', '{JS_CHECK_CANCELLATION}', '{JS_CHECK_PRIVACY}')">{TXT_SUBMIT_BUY}</button>
+
+</form>
